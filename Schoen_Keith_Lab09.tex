@@ -1,0 +1,140 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{hanging}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{longtable}
+%\usepackage{lipsum} %remove later
+\doublespacing
+%\setlength\parindent{28 pt}
+\geometry{letterpaper, margin=1in}
+
+% ++++ Fancy Settings (for header) ++++
+\pagestyle{plain}
+\fancypagestyle{main}{
+	\fancyhf{}
+	\lhead{*Report Header*}
+	\rhead{\leftmark}
+	\cfoot{\thepage}
+	\renewcommand{\headrulewidth}{0.4pt}
+}
+
+% Column widths (tweak the numbers if you want)
+\newcommand{\colNum}{0.06\linewidth}   % column 1 (1–10)
+\newcommand{\colSmall}{0.16\linewidth} % columns 2,3,5
+\newcommand{\colBig}{0.48\linewidth}   % column 4 (3x colSmall)
+
+% ++++ Begin Doc ++++
+
+\begin{document}
+
+% ++++ Cover Page ++++
+
+\begin{titlepage}
+\centering
+\vfill
+
+% ++Logo
+\includegraphics[width=0.35\textwidth]{logo.png}
+
+\vspace{1.5cm}
+
+% ++Title
+\LARGE{\textbf{*Report Title}}\\
+\vspace{0.3cm}
+\large{\textbf{Keith Schoen}}\\
+\vspace{0.3cm}
+\large{\textbf{*Class/Division}}\\
+\vspace{0.3cm}
+\large{\textbf{*Professor/Team Lead}}\\
+\vspace{0.3cm}
+\large{\textbf{*Date}}\\
+\vspace{0.3cm}
+
+\vfill
+\end{titlepage}
+
+% ++++ ToC ++++
+
+\pagenumbering{gobble} %hide page numbers for cover and ToC
+\tableofcontents
+\clearpage
+
+% ++++ Begin Report ++++
+
+\pagenumbering{arabic} %page one starts here
+\setcounter{page}{1}
+\pagestyle{main} %turn on fancy
+
+
+\vfill
+\textit{++report written with (minimal) help from Claude (Sonnet 4.6)++}
+\end{document}
+
+% +++++++++ Helpful stuff +++++++++++
+%
+% +++ Using Minipages +++
+% \begin{minipage}[t]{\linewidth}
+% \includegraphics[width=0.50\textwidth]{*Image file}\\
+% \textit{*Image subtitle}
+% \end{minipage}
+% \end{enumerate}
+%
+
+
+% +++ Fixed width table +++
+%\begin{tabularx}{1.0\textwidth}{
+%	|| >{\raggedright\arraybackslash}X
+%	|  >{\raggedright\arraybackslash}X
+%	|  >{\raggedright\arraybackslash}X
+%	|  >{\raggedright\arraybackslash}X || }
+%	\hline
+%	\textbf{x} & \textbf{x} & \textbf{x} & \textbf{x} \\
+%	\hline \hline
+%	x $ x $ x & x & x & x  \\
+%	\hline
+%	x $ x $ x & x & x & x \\
+%	\hline
+%	x $ x $ x & x & x & x \\
+%	\hline
+%	x $ x $ x & x &  x  & x \\
+%	\hline
+%\end{tabularx}
+%
+
+% +++ For tables that take multiple pages +++
+%{\singlespacing
+%	\begin{longtable}{
+% 		|| >{\centering\arraybackslash}p{\colNum}
+%  		| >{\raggedright\arraybackslash}p{\colSmall}
+%  		| >{\raggedright\arraybackslash}p{\colSmall}
+%  		| >{\raggedright\arraybackslash}p{\colBig}
+%  		| >{\raggedright\arraybackslash}p{\colSmall} ||}
+%		\hline
+%		\textbf{x} & \textbf{x} & \textbf{x} & \textbf{x} & \textbf{x} \\
+%		\hline\hline
+%		\endhead
+%		\hline
+%  	    	 x & x & x & x  & x \\
+%		\hline
+%	\end{longtable}
+%}
+
+
+
+
+
+
+
+
+
+
+
+
