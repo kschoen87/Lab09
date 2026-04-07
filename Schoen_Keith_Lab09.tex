@@ -47,15 +47,15 @@
 \vspace{1.5cm}
 
 % ++Title
-\LARGE{\textbf{*Report Title}}\\
+\LARGE{\textbf{Lab 09: OS Hardening}}\\
 \vspace{0.3cm}
 \large{\textbf{Keith Schoen}}\\
 \vspace{0.3cm}
-\large{\textbf{*Class/Division}}\\
+\large{\textbf{CSEC3755-001}}\\
 \vspace{0.3cm}
 \large{\textbf{Dr. Daniel Pittman}}\\
 \vspace{0.3cm}
-\large{\textbf{*Date}}\\
+\large{\textbf{8 April, 2026}}\\
 \vspace{0.3cm}
 
 \vfill
@@ -72,6 +72,92 @@
 \pagenumbering{arabic} %page one starts here
 \setcounter{page}{1}
 \pagestyle{main} %turn on fancy
+
+% +++++ Part 01 +++++
+\section{Windows Hardening}
+% +++ P01.1 +++
+\subsection{Review User Accounts}
+\includegraphics[width=0.50\textwidth]{images/p1.1.png}\\ \textit{Figure 1: Screenshot showing all accounts and there enabled/disabled status.}\\
+From a hardening perspective, the guest account would count as an unnecessary access point. The guest account allows - although limited - access to a machine/network without any credentials eliminating the "hard part" for an attacker. This account is almost always unnecessary and should be disabled.
+
+% +++ P01.2 +++
+\subsection{Configure Password Policy}
+\includegraphics[width=0.50\textwidth]{images/p1.2.1.png}\\ \textit{Figure 2: Screenshot showing default password policy}\\
+\ \\
+\includegraphics[width=0.50\textwidth]{images/p1.2.2.png}\\ \textit{Figure 3: Screenshot showing updated password policy}\\
+People seem to hate comming up with and remembering passwords. Without having password minimums in place, everyone's password would be "user" and every machine and system would be better off without password protection (at least people would be able to get on quicker!) To make sure that password protection is doing it's bare minimum, these simple policies must be put into place.
+
+% +++ P01.3 +++
+\subsection{Configure Account Lockout Policy}
+\includegraphics[width=0.50\textwidth]{images/p1.3.1.png}\\ \textit{Figure 4: Screenshot showing default lockout policy}\\
+\ \\
+\includegraphics[width=0.50\textwidth]{images/p1.3.2.png}\\ \textit{Figure 5: Screenshot showing updated lockout policy}\\
+It's not wise to give people too many tries or too much time with logging into an account. Adding just a little extra strictness to these policies makes it just that much more of a pain for even brute force tactics, hopefully making it not worth while.
+\newpage
+
+% +++ P01.4 +++
+\subsection{Disable Unnecessary Services}
+\includegraphics[width=0.32\textwidth]{images/p1.4.1.png} \includegraphics[width=0.32\textwidth]{images/p1.4.2.png} \includegraphics[width=0.32\textwidth]{images/p1.4.3.png}\\ \textit{Figures 6-8: Screenshots of the list of Running Services.}
+\ \\
+\includegraphics[width=0.50\textwidth]{images/p1.4.4.png}\\ \textit{Figure 9: Screenshot of disabled services}\\
+I focused on the the 4 services that were stated as unnecessary for the VM. After running a check, I disabled the 3 that were running/enabled and stopped/disabled them.
+\newpage
+
+% ====================================================
+% +++++ Part 02 +++++
+\section{Linux Hardening}
+% +++ P02.1 +++
+\subsection{Review User Accounts in /etc/passwd}
+\includegraphics[width=0.46\textwidth]{images/p2.1.1.png} \includegraphics[width=0.46\textwidth]{images/p2.1.2.png}\\ \textit{Figures 10-11: Screenshots of all accounts}\\
+\ \\
+\includegraphics[width=0.50\textwidth]{images/p2.1.3.png}\\ \textit{Figure 12: Screenshot of accounts with UID 0}\\
+\ \\
+\includegraphics[width=0.50\textwidth]{images/p2.1.4.png}\\ \textit{Figure 13: Screenshot of accounts that can log in}
+
+% +++ P02.2 +++
+\subsection{Configure Password Policy via /etc/login.defs}
+\includegraphics[width=0.50\textwidth]{images/p2.2.1.png}\\ \textit{Figure 14: Screenshot of default password policies}\\
+\newpage
+\noindent\includegraphics[width=0.50\textwidth]{images/p2.2.2.png}\\ \textit{Figure 15: Screenshot of changes to password policy in /etc/login.defs}\\
+\ \\
+\includegraphics[width=0.50\textwidth]{images/p2.2.3.png}\\ \textit{Figure 16: Screenshot of changes to existing user kali's password policy}
+
+% +++ P02.3 +++
+\subsection{Configure Account Lockout Policy via PAM}
+\includegraphics[width=0.50\textwidth]{images/p2.3.1.png}\\ \textit{Figure 17: Screenshot of current /etc/pam.d/common-auth file contents}\\
+\ \\
+\includegraphics[width=0.50\textwidth]{images/p2.3.2.png}\\ \textit{Figure 18: Screenshot of two lines added to /etc/pam.d/common-auth file}\\
+\ \\
+\includegraphics[width=0.50\textwidth]{images/p2.3.3.png}\\ \textit{Figure 19: Screenshot of line added to the end of /etc/pam.d/common-account file}\\
+\ \\
+\includegraphics[width=0.50\textwidth]{images/p2.3.4.png}\\ \textit{Figure 20: Screenshot of test. Five login attempts made to account kali using intentionally incorrect passwords. The sixth attempt was made using the correct password. Lockout is confirmed by continued denied access.}
+
+% +++ P02.4 +++
+\subsection{Review and Manage Services}
+
+
+%=====================================================
+% +++++ Part 03 +++++
+\section{CIS Benchmark Comparison}
+% +++ P03.1 +++
+\subsection{Linux CIS Benchmark Checks}
+
+
+% +++ P03.2 +++
+\subsection{Windows CIS Benchmark Checks}
+
+
+% +++++ Part 04 +++++
+\section{Security Policy Draft}
+
+% +++++ Part 05 +++++
+\section{Reflection Questions}
+% +++ P05.1 +++
+\subsection{Policy vs. Technical Controls}
+
+
+% +++ P05.2 +++
+\subsection{Defense in Depth}
 
 
 \vfill
