@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1775626081.14838 "c:/Users/kasch/OneDrive/Desktop/Spring26/Defense/Lab09/Schoen_Keith_Lab09.tex" "Schoen_Keith_Lab09.pdf" "Schoen_Keith_Lab09" 1775626082.95312 0
+["pdflatex"] 1775685529.99128 "c:/Users/kasch/OneDrive/Desktop/Spring26/Defense/Lab09/Schoen_Keith_Lab09.tex" "Schoen_Keith_Lab09.pdf" "Schoen_Keith_Lab09" 1775685532.48347 0
   "C:/Users/kasch/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1773780835 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/kasch/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1763047904 13333512 082715a2fe32f3c00b1aeea1ad4f5d38 ""
   "C:/Users/kasch/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -59,10 +59,10 @@
   "C:/Users/kasch/AppData/Local/Programs/MiKTeX/tex/latex/tools/longtable.sty" 1761901070 16014 dfa4b4d4e04a78a3f05a90c19711737a ""
   "C:/Users/kasch/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1761901070 7243 a2c17f18e2c9b702b84fad03d5f9c78b ""
   "C:/Users/kasch/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "Schoen_Keith_Lab09.aux" 1775626082 2141 06cd205fa4cdda2f6692b3a671eea290 "pdflatex"
-  "Schoen_Keith_Lab09.tex" 1775626075 7864 23c9e1e63e80a086a2b9f133a8872c06 ""
-  "Schoen_Keith_Lab09.toc" 1775626082 1371 8ede45f1d7901732b1ace6511332021b "pdflatex"
-  "c:/Users/kasch/OneDrive/Desktop/Spring26/Defense/Lab09/Schoen_Keith_Lab09.tex" 1775626075 7864 23c9e1e63e80a086a2b9f133a8872c06 ""
+  "Schoen_Keith_Lab09.aux" 1775685532 2141 4142f28dda2189ca56fe6faa0514f526 "pdflatex"
+  "Schoen_Keith_Lab09.tex" 1775685529 7846 2a610fd68e663cc02912228fce257d83 ""
+  "Schoen_Keith_Lab09.toc" 1775685532 1371 dbf6e92cee0bb09e103914d7a2809758 "pdflatex"
+  "c:/Users/kasch/OneDrive/Desktop/Spring26/Defense/Lab09/Schoen_Keith_Lab09.tex" 1775685529 7846 2a610fd68e663cc02912228fce257d83 ""
   "images/logo.png" 1771367734 296344 964c7f4ba30c0c41b95ee771cdf57781 ""
   "images/p1.1.png" 1775622489 101909 2046a50f00eb3d9a3549d5a774ee6e3a ""
   "images/p1.2.1.png" 1775622489 135071 26718695f104ac1c449671a60638ceb7 ""
