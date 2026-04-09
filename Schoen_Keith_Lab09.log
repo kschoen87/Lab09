@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.13)  8 APR 2026 23:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.13)  9 APR 2026 01:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -324,6 +324,11 @@ File: images/p1.1.png Graphic file (type png)
 <use images/p1.1.png>
 Package pdftex.def Info: images/p1.1.png  used on input line 81.
 (pdftex.def)             Requested size: 234.8775pt x 85.96365pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
 <images/p1.2.1.png, id=14, 608.64891pt x 236.00671pt>
 File: images/p1.2.1.png Graphic file (type png)
 <use images/p1.2.1.png>
@@ -335,7 +340,12 @@ File: images/p1.2.2.png Graphic file (type png)
 Package pdftex.def Info: images/p1.2.2.png  used on input line 88.
 (pdftex.def)             Requested size: 234.8775pt x 90.52667pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--90
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
 
@@ -349,18 +359,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [1
 
  <./images/p1.1.png> <./images/p1.2.1.png> <./images/p1.2.2.png>]
-<images/p1.3.1.png, id=23, 608.2725pt x 153.95015pt>
+<images/p1.3.1.png, id=24, 608.2725pt x 153.95015pt>
 File: images/p1.3.1.png Graphic file (type png)
 <use images/p1.3.1.png>
-Package pdftex.def Info: images/p1.3.1.png  used on input line 93.
+Package pdftex.def Info: images/p1.3.1.png  used on input line 94.
 (pdftex.def)             Requested size: 234.8775pt x 59.44598pt.
-<images/p1.3.2.png, id=24, 609.40172pt x 148.30406pt>
+<images/p1.3.2.png, id=25, 609.40172pt x 148.30406pt>
 File: images/p1.3.2.png Graphic file (type png)
 <use images/p1.3.2.png>
-Package pdftex.def Info: images/p1.3.2.png  used on input line 95.
+Package pdftex.def Info: images/p1.3.2.png  used on input line 96.
 (pdftex.def)             Requested size: 234.8775pt x 57.15945pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--97
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
 
  []
 
@@ -372,26 +387,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [2 <./images/p1.3.1.png> <./images/p1.3.2.png>]
-<images/p1.4.1.png, id=30, 592.83984pt x 541.64859pt>
+<images/p1.4.1.png, id=31, 592.83984pt x 541.64859pt>
 File: images/p1.4.1.png Graphic file (type png)
 <use images/p1.4.1.png>
-Package pdftex.def Info: images/p1.4.1.png  used on input line 101.
+Package pdftex.def Info: images/p1.4.1.png  used on input line 102.
 (pdftex.def)             Requested size: 150.32504pt x 137.3458pt.
-<images/p1.4.2.png, id=31, 596.2275pt x 541.27219pt>
+<images/p1.4.2.png, id=32, 596.2275pt x 541.27219pt>
 File: images/p1.4.2.png Graphic file (type png)
 <use images/p1.4.2.png>
-Package pdftex.def Info: images/p1.4.2.png  used on input line 101.
+Package pdftex.def Info: images/p1.4.2.png  used on input line 102.
 (pdftex.def)             Requested size: 150.32504pt x 136.46573pt.
-<images/p1.4.3.png, id=32, 597.35672pt x 236.75954pt>
+<images/p1.4.3.png, id=33, 597.35672pt x 236.75954pt>
 File: images/p1.4.3.png Graphic file (type png)
 <use images/p1.4.3.png>
-Package pdftex.def Info: images/p1.4.3.png  used on input line 101.
+Package pdftex.def Info: images/p1.4.3.png  used on input line 102.
 (pdftex.def)             Requested size: 150.32504pt x 59.5799pt.
-<images/p1.4.4.png, id=33, 595.09828pt x 481.4236pt>
+<images/p1.4.4.png, id=34, 595.09828pt x 481.4236pt>
 File: images/p1.4.4.png Graphic file (type png)
 <use images/p1.4.4.png>
-Package pdftex.def Info: images/p1.4.4.png  used on input line 103.
+Package pdftex.def Info: images/p1.4.4.png  used on input line 104.
 (pdftex.def)             Requested size: 234.8775pt x 190.00964pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--105
+
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -401,53 +425,58 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [3 <./images/p1.4.1.png> <./images/p1.4.2.png> <./images/p1.4.3.png> <./images/p1.4.4.png>]
-<images/p2.1.1.png, id=41, 438.51328pt x 461.09766pt>
+<images/p2.1.1.png, id=42, 438.51328pt x 461.09766pt>
 File: images/p2.1.1.png Graphic file (type png)
 <use images/p2.1.1.png>
-Package pdftex.def Info: images/p2.1.1.png  used on input line 112.
+Package pdftex.def Info: images/p2.1.1.png  used on input line 113.
 (pdftex.def)             Requested size: 216.09045pt x 227.22034pt.
-<images/p2.1.2.png, id=42, 440.0189pt x 336.88359pt>
+<images/p2.1.2.png, id=43, 440.0189pt x 336.88359pt>
 File: images/p2.1.2.png Graphic file (type png)
 <use images/p2.1.2.png>
-Package pdftex.def Info: images/p2.1.2.png  used on input line 112.
+Package pdftex.def Info: images/p2.1.2.png  used on input line 113.
 (pdftex.def)             Requested size: 216.09045pt x 165.43936pt.
-<images/p2.1.3.png, id=43, 438.8897pt x 52.69687pt>
+<images/p2.1.3.png, id=44, 438.8897pt x 52.69687pt>
 File: images/p2.1.3.png Graphic file (type png)
 <use images/p2.1.3.png>
-Package pdftex.def Info: images/p2.1.3.png  used on input line 114.
+Package pdftex.def Info: images/p2.1.3.png  used on input line 115.
 (pdftex.def)             Requested size: 234.8775pt x 28.20178pt.
-<images/p2.1.4.png, id=44, 438.8897pt x 77.91609pt>
+<images/p2.1.4.png, id=45, 438.8897pt x 77.91609pt>
 File: images/p2.1.4.png Graphic file (type png)
 <use images/p2.1.4.png>
-Package pdftex.def Info: images/p2.1.4.png  used on input line 116.
+Package pdftex.def Info: images/p2.1.4.png  used on input line 117.
 (pdftex.def)             Requested size: 234.8775pt x 41.69836pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--118
+Underfull \hbox (badness 10000) in paragraph at lines 113--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--118
+Underfull \hbox (badness 10000) in paragraph at lines 113--118
 
  []
 
-<images/p2.2.1.png, id=45, 467.12016pt x 103.88812pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--118
+
+ []
+
+<images/p2.2.1.png, id=46, 467.12016pt x 103.88812pt>
 File: images/p2.2.1.png Graphic file (type png)
 <use images/p2.2.1.png>
-Package pdftex.def Info: images/p2.2.1.png  used on input line 121.
+Package pdftex.def Info: images/p2.2.1.png  used on input line 122.
 (pdftex.def)             Requested size: 234.8775pt x 52.23718pt.
-<images/p2.2.2.png, id=46, 465.99094pt x 121.57922pt>
+<images/p2.2.2.png, id=47, 465.99094pt x 121.57922pt>
 File: images/p2.2.2.png Graphic file (type png)
 <use images/p2.2.2.png>
-Package pdftex.def Info: images/p2.2.2.png  used on input line 122.
+Package pdftex.def Info: images/p2.2.2.png  used on input line 123.
 (pdftex.def)             Requested size: 234.8775pt x 61.28107pt.
-<images/p2.2.3.png, id=47, 467.12016pt x 115.18031pt>
+<images/p2.2.3.png, id=48, 467.12016pt x 115.18031pt>
 File: images/p2.2.3.png Graphic file (type png)
 <use images/p2.2.3.png>
-Package pdftex.def Info: images/p2.2.3.png  used on input line 124.
+Package pdftex.def Info: images/p2.2.3.png  used on input line 125.
 (pdftex.def)             Requested size: 234.8775pt x 57.91513pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--125
+Underfull \hbox (badness 10000) in paragraph at lines 122--126
 
  []
 
@@ -459,43 +488,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4 <./images/p2.1.1.png> <./images/p2.1.2.png> <./images/p2.1.3.png> <./images/p2.1.4.png>]
-<images/p2.3.1.png, id=55, 466.74374pt x 341.40047pt>
+<images/p2.3.1.png, id=56, 466.74374pt x 341.40047pt>
 File: images/p2.3.1.png Graphic file (type png)
 <use images/p2.3.1.png>
-Package pdftex.def Info: images/p2.3.1.png  used on input line 128.
+Package pdftex.def Info: images/p2.3.1.png  used on input line 129.
 (pdftex.def)             Requested size: 234.8775pt x 171.80418pt.
-<images/p2.3.2.png, id=56, 559.7161pt x 83.9386pt>
+<images/p2.3.2.png, id=57, 559.7161pt x 83.9386pt>
 File: images/p2.3.2.png Graphic file (type png)
 <use images/p2.3.2.png>
-Package pdftex.def Info: images/p2.3.2.png  used on input line 130.
+Package pdftex.def Info: images/p2.3.2.png  used on input line 131.
 (pdftex.def)             Requested size: 234.8775pt x 35.22322pt.
-<images/p2.3.3.png, id=57, 558.21046pt x 74.52844pt>
+<images/p2.3.3.png, id=58, 558.21046pt x 74.52844pt>
 File: images/p2.3.3.png Graphic file (type png)
 <use images/p2.3.3.png>
-Package pdftex.def Info: images/p2.3.3.png  used on input line 132.
+Package pdftex.def Info: images/p2.3.3.png  used on input line 133.
 (pdftex.def)             Requested size: 234.8775pt x 31.35858pt.
-<images/p2.3.4.png, id=58, 557.45766pt x 124.96687pt>
+<images/p2.3.4.png, id=59, 557.45766pt x 124.96687pt>
 File: images/p2.3.4.png Graphic file (type png)
 <use images/p2.3.4.png>
-Package pdftex.def Info: images/p2.3.4.png  used on input line 134.
+Package pdftex.def Info: images/p2.3.4.png  used on input line 135.
 (pdftex.def)             Requested size: 234.8775pt x 52.65161pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--138
+Underfull \hbox (badness 10000) in paragraph at lines 129--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--138
+Underfull \hbox (badness 10000) in paragraph at lines 129--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--138
+Underfull \hbox (badness 10000) in paragraph at lines 129--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--138
+Underfull \hbox (badness 10000) in paragraph at lines 129--136
 
  []
 
@@ -507,33 +536,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5 <./images/p2.2.1.png> <./images/p2.2.2.png> <./images/p2.2.3.png> <./images/p2.3.1.png> <./images/p2.3.2.png>]
-<images/p2.4.1.png, id=68, 438.8897pt x 414.79968pt>
+<images/p2.4.1.png, id=69, 438.8897pt x 414.79968pt>
 File: images/p2.4.1.png Graphic file (type png)
 <use images/p2.4.1.png>
 Package pdftex.def Info: images/p2.4.1.png  used on input line 139.
 (pdftex.def)             Requested size: 234.8775pt x 221.98842pt.
-<images/p2.4.2.png, id=69, 440.39531pt x 185.19188pt>
+<images/p2.4.2.png, id=70, 440.39531pt x 185.19188pt>
 File: images/p2.4.2.png Graphic file (type png)
 <use images/p2.4.2.png>
 Package pdftex.def Info: images/p2.4.2.png  used on input line 141.
 (pdftex.def)             Requested size: 234.8775pt x 98.76724pt.
-<images/p2.4.3.png, id=70, 438.13687pt x 104.26453pt>
+<images/p2.4.3.png, id=71, 438.13687pt x 104.26453pt>
 File: images/p2.4.3.png Graphic file (type png)
 <use images/p2.4.3.png>
 Package pdftex.def Info: images/p2.4.3.png  used on input line 143.
 (pdftex.def)             Requested size: 234.8775pt x 55.89471pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--147
+Underfull \hbox (badness 10000) in paragraph at lines 139--144
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--147
+Underfull \hbox (badness 10000) in paragraph at lines 139--144
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--147
+Underfull \hbox (badness 10000) in paragraph at lines 139--144
 
  []
 
@@ -545,23 +574,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6 <./images/p2.3.3.png> <./images/p2.3.4.png> <./images/p2.4.1.png>]
-<images/p2.5.1.png, id=77, 438.13687pt x 122.70844pt>
+<images/p2.5.1.png, id=79, 438.13687pt x 122.70844pt>
 File: images/p2.5.1.png Graphic file (type png)
 <use images/p2.5.1.png>
-Package pdftex.def Info: images/p2.5.1.png  used on input line 148.
+Package pdftex.def Info: images/p2.5.1.png  used on input line 147.
 (pdftex.def)             Requested size: 234.8775pt x 65.78223pt.
-<images/p2.5.2.png, id=78, 438.51328pt x 90.71391pt>
+<images/p2.5.2.png, id=80, 438.51328pt x 90.71391pt>
 File: images/p2.5.2.png Graphic file (type png)
 <use images/p2.5.2.png>
-Package pdftex.def Info: images/p2.5.2.png  used on input line 150.
+Package pdftex.def Info: images/p2.5.2.png  used on input line 149.
 (pdftex.def)             Requested size: 234.8775pt x 48.5889pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--151
+Underfull \hbox (badness 10000) in paragraph at lines 147--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--151
+Underfull \hbox (badness 10000) in paragraph at lines 147--150
 
  []
 
@@ -573,20 +602,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7 <./images/p2.4.2.png> <./images/p2.4.3.png> <./images/p2.5.1.png> <./images/p2.5.2.png>]
-<images/p3.1.png, id=86, 438.51328pt x 58.34297pt>
+<images/p3.1.png, id=88, 438.51328pt x 58.34297pt>
 File: images/p3.1.png Graphic file (type png)
 <use images/p3.1.png>
-Package pdftex.def Info: images/p3.1.png  used on input line 162.
+Package pdftex.def Info: images/p3.1.png  used on input line 161.
 (pdftex.def)             Requested size: 281.85587pt x 37.50049pt.
-<images/p3.2.png, id=87, 439.2661pt x 62.10703pt>
+<images/p3.2.png, id=89, 439.2661pt x 62.10703pt>
 File: images/p3.2.png Graphic file (type png)
 <use images/p3.2.png>
-Package pdftex.def Info: images/p3.2.png  used on input line 170.
+Package pdftex.def Info: images/p3.2.png  used on input line 169.
 (pdftex.def)             Requested size: 281.85587pt x 39.85164pt.
-<images/p3.3.png, id=88, 433.24359pt x 64.74188pt>
+<images/p3.3.png, id=90, 433.24359pt x 64.74188pt>
 File: images/p3.3.png Graphic file (type png)
 <use images/p3.3.png>
-Package pdftex.def Info: images/p3.3.png  used on input line 178.
+Package pdftex.def Info: images/p3.3.png  used on input line 177.
 (pdftex.def)             Requested size: 281.85587pt x 42.12123pt.
 
 
@@ -597,16 +626,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8 <./images/p3.1.png> <./images/p3.2.png> <./images/p3.3.png>]
-<images/p3.4.png, id=97, 439.6425pt x 63.61266pt>
+<images/p3.4.png, id=99, 439.6425pt x 63.61266pt>
 File: images/p3.4.png Graphic file (type png)
 <use images/p3.4.png>
-Package pdftex.def Info: images/p3.4.png  used on input line 187.
+Package pdftex.def Info: images/p3.4.png  used on input line 186.
 (pdftex.def)             Requested size: 281.85587pt x 40.78279pt.
-<images/p3.5.png, id=98, 437.76047pt x 42.1575pt>
+<images/p3.5.png, id=100, 437.76047pt x 42.1575pt>
 File: images/p3.5.png Graphic file (type png)
 <use images/p3.5.png>
-Package pdftex.def Info: images/p3.5.png  used on input line 195.
+Package pdftex.def Info: images/p3.5.png  used on input line 194.
 (pdftex.def)             Requested size: 281.85587pt x 27.14343pt.
+<images/p3.6.png, id=101, 583.80609pt x 77.16328pt>
+File: images/p3.6.png Graphic file (type png)
+<use images/p3.6.png>
+Package pdftex.def Info: images/p3.6.png  used on input line 206.
+(pdftex.def)             Requested size: 281.85587pt x 37.25458pt.
+<images/p3.7.png, id=102, 585.68813pt x 62.48344pt>
+File: images/p3.7.png Graphic file (type png)
+<use images/p3.7.png>
+Package pdftex.def Info: images/p3.7.png  used on input line 214.
+(pdftex.def)             Requested size: 281.85587pt x 30.07083pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -615,7 +654,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9 <./images/p3.4.png> <./images/p3.5.png>]
+[9 <./images/p3.4.png> <./images/p3.5.png> <./images/p3.6.png> <./images/p3.7.png>]
+<images/p3.8.png, id=110, 584.93532pt x 68.12953pt>
+File: images/p3.8.png Graphic file (type png)
+<use images/p3.8.png>
+Package pdftex.def Info: images/p3.8.png  used on input line 222.
+(pdftex.def)             Requested size: 281.85587pt x 32.82965pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -623,24 +668,81 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10] (Schoen_Keith_Lab09.aux)
+[10 <./images/p3.8.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 230--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--236
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[15] (Schoen_Keith_Lab09.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4959 strings out of 467871
- 77702 string characters out of 5418375
+ 4985 strings out of 467871
+ 78223 string characters out of 5418375
  493934 words of memory out of 5000000
- 33782 multiletter control sequences out of 15000+600000
- 635343 words of font info for 68 fonts, out of 8000000 for 9000
+ 33806 multiletter control sequences out of 15000+600000
+ 636066 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,74p,461b,515s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\kasch\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/kasch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/kasch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/kasch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/kasch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Schoen_Keith_Lab09.pdf (12 pages, 2363096 bytes).
+ 57i,11n,74p,592b,503s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\kasch\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\kasch\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/kasch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/kasch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/kasch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/kasch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/kasch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/kasch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Schoen_Keith_Lab09.pdf (17 pages, 2523937 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
+ 167 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -79,29 +79,30 @@
 % +++ P01.1 +++
 \subsection{Review User Accounts}
 \includegraphics[width=0.50\textwidth]{images/p1.1.png}\\ \textit{Figure 1: Screenshot showing all accounts and there enabled/disabled status.}\\
-From a hardening perspective, the guest account would count as an unnecessary access point. The guest account allows - although limited - access to a machine/network without any credentials eliminating the "hard part" for an attacker. This account is almost always unnecessary and should be disabled.
+\par {\footnotesize From a hardening perspective, the guest account would count as an unnecessary access point. The guest account allows - although limited - access to a machine/network without any credentials eliminating the "hard part" for an attacker. This account is almost always unnecessary and should be disabled.}
 
 % +++ P01.2 +++
 \subsection{Configure Password Policy}
 \includegraphics[width=0.50\textwidth]{images/p1.2.1.png}\\ \textit{Figure 2: Screenshot showing default password policy}\\
 \ \\
 \includegraphics[width=0.50\textwidth]{images/p1.2.2.png}\\ \textit{Figure 3: Screenshot showing updated password policy}\\
-People seem to hate comming up with and remembering passwords. Without having password minimums in place, everyone's password would be "user" and every machine and system would be better off without password protection (at least people would be able to get on quicker!) To make sure that password protection is doing it's bare minimum, these simple policies must be put into place.
+\newpage
+\par {\footnotesize People seem to hate comming up with and remembering passwords. Without having password minimums in place, everyone's password would be "user" and every machine and system would be better off without password protection (at least people would be able to get on quicker!) To make sure that password protection is doing it's bare minimum, these simple policies must be put into place.}
 
 % +++ P01.3 +++
 \subsection{Configure Account Lockout Policy}
 \includegraphics[width=0.50\textwidth]{images/p1.3.1.png}\\ \textit{Figure 4: Screenshot showing default lockout policy}\\
 \ \\
 \includegraphics[width=0.50\textwidth]{images/p1.3.2.png}\\ \textit{Figure 5: Screenshot showing updated lockout policy}\\
-It's not wise to give people too many tries or too much time with logging into an account. Adding just a little extra strictness to these policies makes it just that much more of a pain for even brute force tactics, hopefully making it not worth while.
+\par {\footnotesize It's not wise to give people too many tries or too much time with logging into an account. Adding just a little extra strictness to these policies makes it just that much more of a pain for even brute force tactics, hopefully making it not worth while.}
 \newpage
 
 % +++ P01.4 +++
 \subsection{Disable Unnecessary Services}
-\includegraphics[width=0.32\textwidth]{images/p1.4.1.png} \includegraphics[width=0.32\textwidth]{images/p1.4.2.png} \includegraphics[width=0.32\textwidth]{images/p1.4.3.png}\\ \textit{Figures 6-8: Screenshots of the list of Running Services.}
+\includegraphics[width=0.32\textwidth]{images/p1.4.1.png} \includegraphics[width=0.32\textwidth]{images/p1.4.2.png} \includegraphics[width=0.32\textwidth]{images/p1.4.3.png}\\ \textit{Figures 6-8: Screenshots of the list of Running Services.}\\
 \ \\
 \includegraphics[width=0.50\textwidth]{images/p1.4.4.png}\\ \textit{Figure 9: Screenshot of disabled services}\\
-I focused on the the 4 services that were stated as unnecessary for the VM. After running a check, I disabled the 3 that were running/enabled and stopped/disabled them.
+\par {\footnotesize I focused on the the 4 services that were stated as unnecessary for the VM. After running a check, I disabled the 3 that were running/enabled and stopped/disabled them.}
 \newpage
 
 % ====================================================
@@ -114,7 +115,7 @@ I focused on the the 4 services that were stated as unnecessary for the VM. Afte
 \includegraphics[width=0.50\textwidth]{images/p2.1.3.png}\\ \textit{Figure 12: Screenshot of accounts with UID 0}\\
 \ \\
 \includegraphics[width=0.50\textwidth]{images/p2.1.4.png}\\ \textit{Figure 13: Screenshot of accounts that can log in}\\
-Besides the root user, there are a couple of additional accounts like kali and postgres. Based on pased labs, I think these both have something to do with the VM storage architecture.
+\par {\footnotesize Besides the root user, there are a couple of additional accounts like kali and postgres. Based on pased labs, I think these both have something to do with the VM storage architecture.}
 
 % +++ P02.2 +++
 \subsection{Configure Password Policy via /etc/login.defs}
@@ -132,8 +133,7 @@ Besides the root user, there are a couple of additional accounts like kali and p
 \includegraphics[width=0.50\textwidth]{images/p2.3.3.png}\\ \textit{Figure 19: Screenshot of line added to the end of /etc/pam.d/common-account file}\\
 \ \\
 \includegraphics[width=0.50\textwidth]{images/p2.3.4.png}\\ \textit{Figure 20: Screenshot of faillock test results.}\\
-\ \\
-\underbar{Note about Section 2.3:} I had to do this section of the lab three times as there was an reoccurring issue with the password policy. For some reason, I kept getting locked out of my account immediately after implementing the password policy. After several tries, I asked for help, spun to before the lockout policy was implemented and continued with the rest of the lab.
+\par {\footnotesize\textit{Note about Section 2.3: I had to do this section of the lab three times as there was an reoccurring issue with the password policy. For some reason, I kept getting locked out of my account immediately after implementing the password policy. After several tries, I asked for help, spun to before the lockout policy was implemented and continued with the rest of the lab.}}
 % +++ P02.4 +++
 \subsection{Review and Manage Services}
 \includegraphics[width=0.50\textwidth]{images/p2.4.1.png}\\ \textit{Figure 21: Screenshot of running services}\\
@@ -141,8 +141,7 @@ Besides the root user, there are a couple of additional accounts like kali and p
 \includegraphics[width=0.50\textwidth]{images/p2.4.2.png}\\ \textit{Figure 22: Screenshot of listening ports}\\
 \ \\
 \includegraphics[width=0.50\textwidth]{images/p2.4.3.png}\\ \textit{Figure 23: Screenshot of apache2 disabled}\\
-\ \\
-\underbar{Note about this section:} I ran the check on all of the services listed in the Kali quick reference table and of all the services that were installed, only apache2 was active.
+\par {\footnotesize\textit{Note about this section: I ran the check on all of the services listed in the Kali quick reference table and of all the services that were installed, only apache2 was active.}}
 % +++ P02.5 +++
 \subsection{SSH Hardening}
 \includegraphics[width=0.50\textwidth]{images/p2.5.1.png}\\ \textit{Figure 24: Screenshot of current SSH daemon configuration}\\
@@ -203,42 +202,104 @@ Besides the root user, there are a couple of additional accounts like kali and p
 	% +++ 1 +++
 	\item \textbf{1.1.1} Ensure 'Enforce password history' is set to 5 or more passwords
 	\begin{itemize}
-		\item \textbf{Check Command:}
-		\item \textit{Figure 26.6: Screenshot of...}
-		\item \textbf{Result (Pass/Fail):}
+		\item \textbf{Check Command:} \texttt{net accounts | findstr "Password history"}
+		\item \includegraphics[width=0.60\textwidth]{images/p3.6.png} \\ \textit{Figure 26.6: Screenshot of check command output}
+		\item \textbf{Result (Pass/Fail):} \texttt{Length of password history maintained: 5} ; \textit{\textcolor{OliveGreen}{PASS}}
 	\end{itemize}
 
 	% +++ 2 +++
 	\item \textbf{1.1.4} Ensure 'Minimum password length' is set to 14 or more characters
 	\begin{itemize}
-		\item \textbf{Check Command:}
-		\item \textit{Figure 26.7: Screenshot of...}
-		\item \textbf{Result (Pass/Fail):}
+		\item \textbf{Check Command:} \texttt{net accounts | findstr "Minimum password length"}
+		\item \includegraphics[width=0.60\textwidth]{images/p3.7.png} \\ \textit{Figure 26.7: Screenshot of check command output}
+		\item \textbf{Result (Pass/Fail):} \texttt{Minimum password length: 14} ; \textit{\textcolor{OliveGreen}{PASS}}
 	\end{itemize}
 
 	% +++ 3 +++
 	\item \textbf{1.2.1} Ensure 'Account lockout duration' is set to 15 or more minutes
 	\begin{itemize}
-		\item \textbf{Check Command:}
-		\item \textit{Figure 26.8: Screenshot of...}
-		\item \textbf{Result (Pass/Fail):}
+		\item \textbf{Check Command:} \texttt{net accounts | findstr "Lockout duration"}
+		\item \includegraphics[width=0.60\textwidth]{images/p3.8.png} \\ \textit{Figure 26.8: Screenshot of check command output}
+		\item \textbf{Result (Pass/Fail):} \texttt{Lockout duration (minutes): 15} ; \textit{\textcolor{OliveGreen}{PASS}}
 	\end{itemize}
 \end{enumerate}
 
-
+\newpage
 % +++++ Part 04 +++++
 \section{Security Policy Draft}
+\textit{Note: This is a very rough draft of a security policy. It is not meant to be a complete or comprehensive policy, but rather a starting point for discussion and further development.}\\
+\ \\
+The following is a draft of the updated password policy for Meridian Analytics. This policy is designed to enhance the security of their systems and protect sensitive information while also being practical and user-friendly for their employees.\\
+\ \\
+\textbf{Minimum Length and Complexity}
+\begin{itemize}
+	\item Password must be at least 14 characters long
+	\item Passwords cannot contain the user's name or more than two consecutive characters from their display name
+	\item Passwords must contain characters from at least three of the following four categories:
+	\begin{itemize}
+		\item Uppercase letters (A-Z)
+		\item Lowercase letters (a-z)
+		\item Numbers (0-9)
+		\item Special characters (e.g., !, @, \#, \$, etc.)
+	\end{itemize}
+\end{itemize}
+\textbf{Expiration and History}
+\begin{itemize}
+	\item Passwords must be changed every 60 days
+	\item Users cannot reuse any of their last 5 passwords
+\end{itemize}
+\newpage  % Orphan fix
+\noindent\textbf{Account Lockouts}
+\begin{itemize}
+	\item Accounts will be locked out after 5 failed login attempts
+	\item Locked accounts will remain locked for 15 minutes or until an administrator unlocks
+\end{itemize}
+\textbf{Prohibited Behaviors}
+\begin{itemize}
+	\item Sharing passwords with others is strictly prohibited
+	\item Writing down passwords and leaving them in easily accessible locations is prohibited
+	\item Using the same password across multiple accounts is discouraged and may be prohibited for certain high-risk accounts
+	\item Storing passwords in plain text or unencrypted files is prohibited
+\end{itemize}
+\textbf{Passphrase Encouragement}
+\begin{itemize}
+	\item Users are encouraged to use passphrases (e.g., "CorrectHorseBatteryStaple") or a quote from your favorite movie or other piece of media instead of traditional passwords for better security and memorability.
+\end{itemize}
+\textbf{Consequences of Non-Compliance}
+\begin{itemize}
+	\item Non-compliance with this password policy may result in disciplinary action, up to and including termination of employment or access privileges.
+	\item Accounts found in viiolation may be suspended or locked until the issue is resolved and the user is in compliance with the policy.
+	\item Intentional circumvention of this policy may be considered a security breach and may be subject to additional investigation and consequences.
+\end{itemize}
+\newpage
+\noindent\textbf{Reporting and Support}
+\begin{itemize}
+	\item Users should report any suspected security incidents, including compromised passwords or unauthorized access, to the IT security team immediately.
+	\item The IT security team will provide support and guidance for users who need assistance with password management or have questions about the policy.
+	\item What to report:
+	\begin{itemize}
+		\item Any suspected unauthorized access to accounts or systems
+		\item Phishing attempts or suspicious emails requesting password information
+		\item Any situation where a user believes their password may have been compromised
+	\end{itemize}
+	\item Users should not attempt to investigate or resolve security incidents on their own, but should instead report them to the IT security team for proper handling.
+\end{itemize}
 
+\newpage
 % +++++ Part 05 +++++
 \section{Reflection Questions}
 % +++ P05.1 +++
 \subsection{Policy vs. Technical Controls}
+\textit{In L20, we said “a well-written policy without enforcement is just a wish list.” But we also said “technology is not enough — it takes policy too.”} \par \textit{Looking at the work you did in Parts 01–04: choose one specific hardening step you took in Parts 01 or 02, and explain what the technical control accomplishes that the policy alone cannot, and what the policy addresses that the technical control alone cannot. In other words: why do you need both?}\\
+\par People are really bad at passwords. I use something to generate and store passwords for me because I'm bad at passwords. You can tell people that they need to make their passwords one way or another, but unless you MAKE them do it, you'll get a lot of "user" and "password" passwords. Therefore, it is stated in the password policy for the employees to see, but it is reinforced by the technical control of the password policy settings on the machines.
+\par Likewise, you can create as many hard and fast technical controls as you want, but if employees are just writing down their passwords on post-its and sticking them under their keyboards, then what good is any of your work. This is something that can only be covered by the written policy along with reporting and consequences.
 
-
+\newpage
 % +++ P05.2 +++
 \subsection{Defense in Depth}
-
-
+\textit{From L19, we know OS hardening is “Layer 3” in our defense-in-depth model: perimeter firewall → IDS → OS hardening → SIEM/monitoring.} \par \textit{Imagine an attacker has already gotten past your firewall (Lab 07) and past your IDS (Lab 08). How does the hardening you did in this lab slow them down or stop them? Give two specific examples of hardening changes you made and explain what attack each one makes harder. Reference actual things you did in Parts 01 or 02.}\\
+\par When I think about getting slowed down by the policies implimented, the first thing that comes to mind is the lockout policy. Granted, the wall that I hit in the lab may have been related to a misstyped command or a line in the wrong place (I will find out later), but the experience of just waiting for a 15 minute timer to go off to try again was brutal in itself.
+\par A lockout is pretty typical, but one policy implemented that I never really thought of was disabling the administrator account along with the guest account on the local machine. I guess it never really occurred to me that the administrator account could be disabled, but with it out of the picture, it would be just that much more difficult for an attacker to maintain a foothold within the system. 
 \vfill
 \textit{++report written with (minimal) help from Claude (Sonnet 4.6)++}
 \end{document}
