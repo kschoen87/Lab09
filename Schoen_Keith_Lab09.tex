@@ -10,6 +10,7 @@
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{longtable}
 %\usepackage{lipsum} %remove later
 \doublespacing
@@ -130,25 +131,99 @@ Besides the root user, there are a couple of additional accounts like kali and p
 \ \\
 \includegraphics[width=0.50\textwidth]{images/p2.3.3.png}\\ \textit{Figure 19: Screenshot of line added to the end of /etc/pam.d/common-account file}\\
 \ \\
-%\includegraphics[width=\textwidth]{images/p2.3.4.png}\\ \textit{Figure 20: Screenshot of test. Five login attempts made to account kali using intentionally incorrect passwords. The sixth attempt was made using the correct password. Lockout is confirmed by continued denied access.}
-
+\includegraphics[width=0.50\textwidth]{images/p2.3.4.png}\\ \textit{Figure 20: Screenshot of faillock test results.}\\
+\ \\
+\underbar{Note about Section 2.3:} I had to do this section of the lab three times as there was an reoccurring issue with the password policy. For some reason, I kept getting locked out of my account immediately after implementing the password policy. After several tries, I asked for help, spun to before the lockout policy was implemented and continued with the rest of the lab.
 % +++ P02.4 +++
 \subsection{Review and Manage Services}
-
-
+\includegraphics[width=0.50\textwidth]{images/p2.4.1.png}\\ \textit{Figure 21: Screenshot of running services}\\
+\ \\
+\includegraphics[width=0.50\textwidth]{images/p2.4.2.png}\\ \textit{Figure 22: Screenshot of listening ports}\\
+\ \\
+\includegraphics[width=0.50\textwidth]{images/p2.4.3.png}\\ \textit{Figure 23: Screenshot of apache2 disabled}\\
+\ \\
+\underbar{Note about this section:} I ran the check on all of the services listed in the Kali quick reference table and of all the services that were installed, only apache2 was active.
 % +++ P02.5 +++
 \subsection{SSH Hardening}
-
+\includegraphics[width=0.50\textwidth]{images/p2.5.1.png}\\ \textit{Figure 24: Screenshot of current SSH daemon configuration}\\
+\ \\
+\includegraphics[width=0.50\textwidth]{images/p2.5.2.png}\\ \textit{Figure 25: Screenshot of hardened SSH configuration}\\
 
 %=====================================================
 % +++++ Part 03 +++++
 \section{CIS Benchmark Comparison}
 % +++ P03.1 +++
 \subsection{Linux CIS Benchmark Checks}
+\begin{enumerate}
+	% +++ 1 +++
+	\item \textbf{5.6.1.1} Ensure password expiration is 365 days or less
+	\begin{itemize}
+		\item \textbf{Check Command:}\texttt{grep PASS\underbar{   }MAX\underbar{   }DAYS /etc/login.defs}
+		\item \includegraphics[width=0.60\textwidth]{images/p3.1.png} \\ \textit{Figure 26.1: Screenshot of check command output}
+		\item \textbf{Result (Pass/Fail):} \texttt{PASS\underbar{   }MAX\underbar{   }DAYS   90} ; \textit{\textcolor{OliveGreen}{PASS}}
+	\end{itemize}
+	
+	% +++ 2 +++
+	\item \textbf{5.6.1.2} Ensure minimum days between password changes is 1 or more
+	\begin{itemize}
+		\item \textbf{Check Command:} \texttt{grep PASS\underbar{   }MIN\underbar{   }DAYS /etc/login.defs}
+		\item \includegraphics[width=0.60\textwidth]{images/p3.2.png} \\ \textit{Figure 26.2: Screenshot of check command output}
+		\item \textbf{Result (Pass/Fail):} \texttt{PASS\underbar{   }MIN\underbar{   }DAYS   7} ; \textit{\textcolor{OliveGreen}{PASS}}
+	\end{itemize}
 
+	% +++ 3 +++
+	\item \textbf{5.6.1.3} Ensure password expiration warning is 7 or more days
+	\begin{itemize}
+		\item \textbf{Check Command:} \texttt{grep PASS\underbar{   }WARN\underbar{   }AGE /etc/login.defs}
+		\item \includegraphics[width=0.60\textwidth]{images/p3.3.png} \\ \textit{Figure 26.3: Screenshot of check command output}
+		\item \textbf{Result (Pass/Fail):} \texttt{PASS\underbar{   }WARN\underbar{   }AGE   14} ; \textit{\textcolor{OliveGreen}{PASS}}	
+	\end{itemize}
+	\newpage
+	
+	% +++ 4 +++
+	\item \textbf{5.2.7} Ensure SSH root login is disabled
+	\begin{itemize}
+		\item \textbf{Check Command:} \texttt{sudo sshd -T | grep permitrootlogin}
+		\item \includegraphics[width=0.60\textwidth]{images/p3.4.png} \\ \textit{Figure 26.4: Screenshot of check command output}
+		\item \textbf{Result (Pass/Fail):} \texttt{permitrootlogin no} ; \textit{\textcolor{OliveGreen}{PASS}}
+	\end{itemize}
+
+	% +++ 5 +++
+	\item \textbf{5.2.11} Ensure SSH MaxAuthTries is set to 4 or fewer
+	\begin{itemize}
+		\item \textbf{Check Command:} \texttt{sudo sshd -T | grep maxauthtries}
+		\item \includegraphics[width=0.60\textwidth]{images/p3.5.png} \\ \textit{Figure 26.5: Screenshot of check command output}
+		\item \textbf{Result (Pass/Fail):} \texttt{maxauthtries 3} ; \textit{\textcolor{OliveGreen}{PASS}}
+	\end{itemize}
+\end{enumerate}
 
 % +++ P03.2 +++
 \subsection{Windows CIS Benchmark Checks}
+\begin{enumerate}
+	% +++ 1 +++
+	\item \textbf{1.1.1} Ensure 'Enforce password history' is set to 5 or more passwords
+	\begin{itemize}
+		\item \textbf{Check Command:}
+		\item \textit{Figure 26.6: Screenshot of...}
+		\item \textbf{Result (Pass/Fail):}
+	\end{itemize}
+
+	% +++ 2 +++
+	\item \textbf{1.1.4} Ensure 'Minimum password length' is set to 14 or more characters
+	\begin{itemize}
+		\item \textbf{Check Command:}
+		\item \textit{Figure 26.7: Screenshot of...}
+		\item \textbf{Result (Pass/Fail):}
+	\end{itemize}
+
+	% +++ 3 +++
+	\item \textbf{1.2.1} Ensure 'Account lockout duration' is set to 15 or more minutes
+	\begin{itemize}
+		\item \textbf{Check Command:}
+		\item \textit{Figure 26.8: Screenshot of...}
+		\item \textbf{Result (Pass/Fail):}
+	\end{itemize}
+\end{enumerate}
 
 
 % +++++ Part 04 +++++
